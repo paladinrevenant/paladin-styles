@@ -1,0 +1,293 @@
+/*
+ *            />
+ *           //____________________________
+ * []///////{*}___________________________/
+ *           \\
+ *            \>    Paladin Revenant
+ */
+
+
+/* Clear all margins, padding, and borders */
+/* -------------------------------------------------------------------------- */
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+/* Add border box sizing to all elements */
+/* -------------------------------------------------------------------------- */
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+/* Normalize fonts on all elements */
+/* -------------------------------------------------------------------------- */
+*, ::before, ::after {
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: inherit;
+  font-family: sans-serif;
+}
+
+/* HTML5 hidden-attribute fix */
+/* -------------------------------------------------------------------------- */
+*[hidden] {
+	display: none;
+}
+
+/* Prevent adjustments of font size after orientation changes */
+/* -------------------------------------------------------------------------- */
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* Change the default tap highlight to be completely transparent in iOS. */
+/* -------------------------------------------------------------------------- */
+html {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Correct block display */
+/* -------------------------------------------------------------------------- */
+article, aside, details, div, figcaption, figure,
+footer, header, hgroup, main, menu, nav,
+section, summary {
+	display: block;
+}
+
+/* Correct inline-block display */
+/* -------------------------------------------------------------------------- */
+audio, canvas, progress, span, video {
+	display: inline-block;
+}
+
+/* Prevent browsers from displaying audio without controls */
+/* -------------------------------------------------------------------------- */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Reset tables */
+/* -------------------------------------------------------------------------- */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Correct bold weight */
+/* -------------------------------------------------------------------------- */
+b, strong {
+	font-weight: bolder;
+}
+
+/* Set monospace font for preformatted and code segments */
+/* -------------------------------------------------------------------------- */
+code, kbd, pre, samp {
+	font-family: monospace monospace;
+	font-size: 1em;
+}
+
+/* Prevent `sub` and `sup` elements from affecting the line height */
+/* -------------------------------------------------------------------------- */
+sub,  sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Force form elements to inherit font styles */
+/* -------------------------------------------------------------------------- */
+button, input, optgroup,
+select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove the gray background on active links in IE 10. */
+/* -------------------------------------------------------------------------- */
+a {
+	background-color: transparent;
+}
+
+/* Correct the inability to style clickable types in iOS and Safari. */
+/* -------------------------------------------------------------------------- */
+button, [type="button"],
+[type="reset"], [type="submit"] {
+	-webkit-appearance: button;
+}
+
+/* Correct small font size */
+/* -------------------------------------------------------------------------- */
+small {
+	font-size: 80%;
+}
+
+/* Show overflow on buttons and input fields */
+/* -------------------------------------------------------------------------- */
+button, input {
+	overflow: visible;
+}
+
+/* Correct the cursor style of increment and decrement buttons in Safari. */
+/* -------------------------------------------------------------------------- */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/* Correct the text style of placeholders in Chrome, Edge, and Safari. */
+/* -------------------------------------------------------------------------- */
+::-webkit-input-placeholder {
+	color: inherit;
+  opacity: 0.54;
+}
+
+/* Remove the inner padding in Chrome, Edge, and Safari on macOS. */
+/* -------------------------------------------------------------------------- */
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/* Correct the inability to style upload buttons in iOS and Safari. */
+/* -------------------------------------------------------------------------- */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+}
+/* Change font properties to `inherit` in Safari. */
+/* -------------------------------------------------------------------------- */
+::-webkit-file-upload-button {
+	font: inherit;
+}
+
+/* Remove the tapping delay on clickable elements */
+/* -------------------------------------------------------------------------- */
+a, area, button, input,
+label, select, summary,
+textarea,
+[tabindex] {
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
+/* ========================================================================== */
+/*    No longer resetting or normalixing. These settings are my more          */
+/*  opinionated ones                                                          */
+/* ========================================================================== */
+
+/* Set root font size for rem-based calculations */
+/* -------------------------------------------------------------------------- */
+html {
+	font-size: 10px;
+}
+
+/* Basic typography settings */
+/* -------------------------------------------------------------------------- */
+html {
+	font-family: sans-serif;
+	line-height: 1.4;
+  tab-size: 4;
+	-moz-tab-size: 4;
+}
+
+body {
+	font-size: 1.6em; /* Should be equivalent to 12pt. Setting it this way allows there to be only a single actual size definition in the document. */
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+ul ul {
+	list-style-type: circle;
+}
+
+nav ol, nav ul {
+	list-style: none;
+}
+
+/* Use correct cursors */
+/* -------------------------------------------------------------------------- */
+html {
+	cursor: default;
+}
+
+a, button, submit {
+	cursor: pointer;
+}
+
+/* Change the cursor on busy elements */
+/* -------------------------------------------------------------------------- */
+[aria-busy="true"] {
+	cursor: progress;
+}
+
+/* Change the cursor on control elements */
+/* -------------------------------------------------------------------------- */
+[aria-controls] {
+	cursor: pointer;
+}
+
+/* Change the cursor on disabled, not-editable, or otherwise inoperable elements. */
+/* -------------------------------------------------------------------------- */
+[aria-disabled="true"], [disabled] {
+	cursor: not-allowed;
+}
+
+/* Change the display on visually hidden accessible elements */
+/* -------------------------------------------------------------------------- */
+[aria-hidden="false"][hidden] {
+  display: initial;
+}
+
+[aria-hidden="false"][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+
+/* ========================================================================== */
+/*   Grid                                                                     */
+/* ========================================================================== */
+
+
+/* ========================================================================== */
+/*   Suggested media breaks                                                   */
+/* ========================================================================== */
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
